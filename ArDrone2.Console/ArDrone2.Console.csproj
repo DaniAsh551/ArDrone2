@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <AssemblyName>ArDrone.Console</AssemblyName>
+        <RootNamespace>ArDrone.Console</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ArDrone2.Client\ArDrone2.Client.csproj"/>
+    </ItemGroup>
+
+</Project>
