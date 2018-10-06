@@ -1,0 +1,8 @@
+<!-- I do not own this project, I have simply copied this project from "https://github.com/kevingoos/NMEAParser/tree/master/NMEAParser/Ghostware.NMEAParser" and recompiled it to work with .NetStandard2.0 - as I needed it that way for my drone library. All Rights and any appreciation for this library is all of the Author's, not mine.  -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+</Project>

@@ -12,4 +12,14 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Geo" Version="0.14.1"/>
+        <PackageReference Include="GeoCoordinate" Version="2.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Ghostware.NMEAParser\Ghostware.NMEAParser.csproj"/>
+        <ProjectReference Include="..\System.Device.Location.GeoCoordinate\System.Device.Location.GeoCoordinate.csproj"/>
+    </ItemGroup>
+
 </Project>

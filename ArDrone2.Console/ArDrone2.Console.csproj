@@ -9,6 +9,11 @@
 
     <ItemGroup>
         <ProjectReference Include="..\ArDrone2.Client\ArDrone2.Client.csproj"/>
+        <ProjectReference Include="..\Ghostware.NMEAParser\Ghostware.NMEAParser.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0"/>
     </ItemGroup>
 
 </Project>

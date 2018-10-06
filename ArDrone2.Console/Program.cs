@@ -1,10 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using ArDrone2.Client.NavData;
+using System.IO.Ports;
+using System.Threading.Tasks;
+using Ghostware.NMEAParser;
 
 namespace ArDrone2.Console
 {
@@ -13,6 +19,28 @@ namespace ArDrone2.Console
 
         static void Main(string[] args)
         {
+            var parser = new NmeaParser();
+
+            var dummy = File.ReadAllText("/home/lubuntu/sample.nmea");
+            //var dummyBytes = Encoding.UTF8.GetBytes(dummy);
+            var nm = parser.Parse(dummy);
+
+            return;
+            var portNames = SerialDevice.GetPortNames();
+            
+            var serial = new SerialDevice("/dev/ttyACM0", BaudRate.B1152000);
+            serial.DataReceived += (o, eventArgs) =>
+            {
+                
+            };
+                
+            
+            serial.Open();
+            
+            while (true)
+                Thread.Sleep(200);
+            return;
+            
             var client = new UdpClient(5554);
             var sender = new UdpClient(5556);
 

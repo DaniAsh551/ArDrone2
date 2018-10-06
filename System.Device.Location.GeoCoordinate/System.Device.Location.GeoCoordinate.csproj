@@ -1,0 +1,8 @@
+<!-- I do not own this project, I have simply copied this project from "https://github.com/ghuntley/geocoordinate/blob/master/src/GeoCoordinatePortable/" and recompiled it with some namespace changes. -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+</Project>
