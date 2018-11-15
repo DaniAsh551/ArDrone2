@@ -16,10 +16,12 @@ namespace ArDrone2.Client.Commands
 
         protected void CheckSequenceNumber()
         {
-            if (SequenceNumber == -1)
+            if (SequenceNumber == 0)
                 throw new InvalidOperationException("The command must be sequenced before it can be sent");
         }
 
         public abstract override string ToString();
+        public byte[] GetBytes()
+            => Encoding.UTF8.GetBytes(ToString());
     }
 }
